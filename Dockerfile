@@ -8,5 +8,5 @@ RUN apt-get install -y \
     vim \
     build-essential \
     cmake
-RUN get clone https://github.com/sanggggg/darknet.git
+RUN git clone https://github.com/sanggggg/darknet.git
 
