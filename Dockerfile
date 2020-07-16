@@ -9,5 +9,6 @@ RUN apt-get install -y \
     build-essential \
     cmake \
     git
+RUN apt-get install nvidia-410.
 RUN git clone https://github.com/sanggggg/darknet.git
 
