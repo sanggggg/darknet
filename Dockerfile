@@ -7,6 +7,7 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y \
     vim \
     build-essential \
-    cmake
+    cmake |
+    git
 RUN git clone https://github.com/sanggggg/darknet.git
 
