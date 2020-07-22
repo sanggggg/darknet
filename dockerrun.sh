@@ -1,6 +1,6 @@
 sudo nvidia-docker run -itd \
-    -v /home/sanggggg/dataset/blade_detection/darknet/:/home/sanggggg/dataset/blade_detection/darknet \
-    -v /home/sanggggg/repos/darknet:/app \
-    -p 8080:80 \
+    -v /media/volume3/darknet_datasets:/media/volume3/darknet_datasets \
+    -v /home/sangmin/darknet:/app \
+    --net="host" \
     --name darknet-train \
-    darknet-opencv:0.0
+    sanggggg/darknet-opencv:0.1
